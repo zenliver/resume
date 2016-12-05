@@ -162,16 +162,27 @@
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolloverflow.min.js" charset="utf-8"></script>
     <script src="js/jquery.fullPage.min.js" charset="utf-8"></script>
-
+    <script src="http//cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js" charset="utf-8"></script>
+    <script src="js/scrollReveal.min.js" charset="utf-8"></script>
     <script type="text/javascript">
         $(function () {
             $("#fullpage").fullpage({
                 verticalCentered:false,
                 navigation:true,
-                navigationTooltips:["基本信息","工作经历","工作技能"]
+                navigationTooltips:["基本信息","工作经历","工作技能"],
+                continuousVertical:true,
+                scrollOverflow:true
+                // loopBottom:true
             });
         });
+    </script>
+    <script type="text/javascript">
+        (function($) {
+            'use strict';
+            window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
+        })();
     </script>
 </body>
 </html>

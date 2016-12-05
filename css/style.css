@@ -48,7 +48,7 @@ body {
     text-indent: 2em;
 }
 #self-description {
-    animation: selfDescMoveUp 2s ease 0.2s;
+    animation: selfDescMoveUp 0.8s ease 0.1s;
 }
 #self-description p {
     background-color: #fff;
@@ -106,7 +106,7 @@ h3 {
 }
 @keyframes selfDescMoveUp {
     0% {
-        transform: translateY(800px);
+        transform: translateY(100px);
     }
     100% {
         transform: translateY(0);
